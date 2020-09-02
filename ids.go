@@ -30,7 +30,7 @@ func OpenTracingTracIDToOpenCensusTraceID(otTraceID jaeger.TraceID) (trace.Trace
 	if err != nil {
 		return trace.TraceID{}, fmt.Errorf("error decoding HEX trace ID: %w", err)
 	}
-	
+
 	if len(ti) != OPENTRACING_TRACE_ID_LENGTH {
 		return trace.TraceID{}, ErrOTTraceIDLen
 	}

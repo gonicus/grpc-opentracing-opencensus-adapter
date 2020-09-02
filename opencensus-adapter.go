@@ -4,12 +4,12 @@ package otocadapter
 import (
 	"context"
 
-	"go.opencensus.io/trace/propagation"
-	"google.golang.org/grpc/metadata"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
 	octrace "go.opencensus.io/trace"
+	"go.opencensus.io/trace/propagation"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/metadata"
 )
 
 const (

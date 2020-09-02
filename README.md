@@ -17,3 +17,9 @@ defer func() {
 }()
 dgraphClient := dgo.NewDgraphClient(api.NewDgraphClient(d))
 ```
+
+## Install
+
+```
+go get -u github.com/gonicus/grpc-opentracing-opencensus-adapter
+```
